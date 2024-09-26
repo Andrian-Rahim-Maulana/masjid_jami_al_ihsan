@@ -1,0 +1,31 @@
+### Lihat semua pengguna
+GET http://localhost:3008/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZW1iZXIiOjEsIm5hbWUiOiJBZG1pbiIsInVzZXJuYW1lIjoiYWRtaW4iLCJpYXQiOjE3MjAwMjYxNDAsImV4cCI6MTcyMDAyNjE2MH0.Yg6CmZvL7JVyTW9IkpyRXyjMU4cuaU1YguywN0vZj78
+
+### Login
+POST http://localhost:3008/login
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "test1234"
+}
+
+### Refresh token
+GET http://localhost:3008/token
+
+### Logout
+DELETE http://localhost:3008/logout
+Content-Type: application/json
+
+{
+    "member": 1
+}
+
+### Mendapatkan data banner secara spesifik
+POST http://localhost:3008/banner
+Content-Type: application/json
+
+{
+    "banner": 17
+}
